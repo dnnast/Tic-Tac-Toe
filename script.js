@@ -126,6 +126,9 @@ cells.forEach((cell) => {
 resetBtn.addEventListener("click", () => {
     gameboard.resetGame();
 
+    playerO.style.display = "none";
+    playerX.style.display = "block";
+
     cells.forEach((cell) => {
         for (const child of cell.children) {
             child.disabled = false;
