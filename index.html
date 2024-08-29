@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tic-Tac-Toe</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300..700&family=Concert+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id="header">
+            <div id="ttt-logo">TIC-TAC-TOE</div>
+            <div class="players">
+                <div id="playerX"><p id="playerX-play">></p>Player X</div>
+                <div id="playerO"><p id="playerO-play" hidden>></p>Player O</div>
+            </div>
+        </div>
+
+        <div id="gameboard-container">         
+            <div class="grid-cell"><button data-cell="1" class="grid-btn"></button></div>
+            <div class="grid-cell"><button data-cell="2" class="grid-btn"></button></div>
+            <div class="grid-cell"><button data-cell="3" class="grid-btn"></button></div>
+            <div class="grid-cell"><button data-cell="4" class="grid-btn"></button></div>
+            <div class="grid-cell"><button data-cell="5" class="grid-btn"></button></div>
+            <div class="grid-cell"><button data-cell="6" class="grid-btn"></button></div>
+            <div class="grid-cell"><button data-cell="7" class="grid-btn"></button></div>
+            <div class="grid-cell"><button data-cell="8" class="grid-btn"></button></div>
+            <div class="grid-cell"><button data-cell="9" class="grid-btn"></button></div>
+        </div>
+
+        <div id="btn-container">
+            <button id="reset-btn">Reset</button>
+        </div>
+
+        <dialog id="winner-dialog">
+            <p id="winner-player">WINNER: </p>
+            <button id="close-winning-dialog">close</button>
+        </dialog>    
+
+        <dialog id="tie-dialog">
+            <p>TIE</p>
+            <button id="close-tie-dialog">close</button>
+        </dialog>
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>
